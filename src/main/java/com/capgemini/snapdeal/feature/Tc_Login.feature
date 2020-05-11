@@ -7,6 +7,6 @@ Scenario: Login into snapdeal website
 	Then user enter username 
 	Then user enter password 
 	Then get the title of the page 
-	Then user clicks on user account
-	Then user clicks on logout
-	Then close the browser
+	Then user clicks on user account 
+	Then user clicks on logout 
+	Then close the browser 

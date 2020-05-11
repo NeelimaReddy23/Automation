@@ -38,7 +38,7 @@ public class Tc_AddProduct_Page {
 	@FindBy(xpath = "//button[@class='searchformButton col-xs-4 rippleGrey']/span")
 	private WebElement onsearch;
 
-	@FindBy(xpath = "//img[@title='RYAAL Hand Sanitizer 500 mL Pack of 1']")
+	@FindBy(xpath = "//img[@title='REJSOL Hand Sanitizer Alcohol Based 100ml * 5 Sanitizers 500 mL Pack of 5']")
 	private WebElement ryaalsanitizer;
 
 	@FindBy(xpath = "//div[@id=\"add-cart-button-id\"]")
@@ -77,7 +77,7 @@ public class Tc_AddProduct_Page {
 	public void getPass() {
 		pwd.click();
 	}
-	
+
 	public WebElement getPwd() {
 		return pwd;
 	}
@@ -93,7 +93,7 @@ public class Tc_AddProduct_Page {
 		driver1.switchTo().window(s1);
 
 	}
-	
+
 	public void getName1() throws InterruptedException {
 		Thread.sleep(3000);
 

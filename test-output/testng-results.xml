@@ -2,40 +2,48 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="65065" started-at="2020-05-05T05:09:15Z" finished-at="2020-05-05T05:10:20Z">
+  <suite name="Default suite" duration-ms="40977" started-at="2020-05-11T08:55:41Z" finished-at="2020-05-11T08:56:22Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_RemoveProduct_Runner@6a01e23]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@6a01e23]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="65065" started-at="2020-05-05T05:09:15Z" finished-at="2020-05-05T05:10:20Z">
-      <class name="com.capgemini.snapdeal.runner.Tc_RemoveProduct_Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_RemoveProduct_Runner@6a01e23]" name="setUpClass" is-config="true" duration-ms="346" started-at="2020-05-05T10:39:15Z" finished-at="2020-05-05T10:39:15Z">
+    <test name="Default test" duration-ms="40977" started-at="2020-05-11T08:55:41Z" finished-at="2020-05-11T08:56:22Z">
+      <class name="com.capgemini.snapdeal.runner.Tc_Payment_Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@6a01e23]" name="setUpClass" is-config="true" duration-ms="328" started-at="2020-05-11T14:25:41Z" finished-at="2020-05-11T14:25:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_RemoveProduct_Runner@6a01e23]" name="feature" duration-ms="64522" started-at="2020-05-05T10:39:16Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-05T10:40:20Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@6a01e23]" name="feature" duration-ms="40430" started-at="2020-05-11T14:25:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-11T14:26:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Checking for adding an item to cart]]>
+                <![CDATA[Snapdeal Payment Feature]]>
               </value>
             </param>
           </params>
           <exception class="cucumber.runtime.CucumberException">
             <message>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class="remove-item-div"]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-6JK916T', ip: '192.168.43.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: RemoteWebDriver]]>
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\system1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f1398211c7ef19463c7021cde0871e74
+*** Element info: {Using=id, value=zip}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class="remove-item-div"]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+              <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-6JK916T', ip: '192.168.43.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: RemoteWebDriver
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\system1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f1398211c7ef19463c7021cde0871e74
+*** Element info: {Using=id, value=zip}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -63,32 +71,45 @@ Driver info: driver.version: RemoteWebDriver
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[@class="remove-item-div"]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=81.0.4044.138)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-6JK916T', ip: '192.168.43.77', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 81.0.4044.138, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\system1\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:56970}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f1398211c7ef19463c7021cde0871e74
+*** Element info: {Using=id, value=zip}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy20.click(Unknown Source)
-	at com.capgemini.snapdeal.page.Tc_RemoveProduct_Page.getRemove(Tc_RemoveProduct_Page.java:140)
-	at com.capgemini.snapdeal.step.Tc_RemoveProduct_Step.user_clicks_on_remove_product(Tc_RemoveProduct_Step.java:75)
-	at ✽.Then user clicks on remove product(C:/Users/system1/Desktop/ParallelAutomation/SnapDealAutomation/src/main/java/com/capgemini/snapdeal/feature/Tc_RemoveProduct.feature:13)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at com.capgemini.snapdeal.step.Tc_Payment_Step.user_enters_delivery_address_and(Tc_Payment_Step.java:89)
+	at ✽.Then user enters delivery address "500041" , "Neelima" and "2-4-123/J, Uppal"(C:/Users/system1/Desktop/ParallelAutomation/SnapDealAutomation/src/main/java/com/capgemini/snapdeal/feature/Tc_Payment.feature:15)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_RemoveProduct_Runner@6a01e23]" name="tearDownClass" is-config="true" duration-ms="23" started-at="2020-05-05T10:40:20Z" finished-at="2020-05-05T10:40:20Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@6a01e23]" name="tearDownClass" is-config="true" duration-ms="78" started-at="2020-05-11T14:26:22Z" finished-at="2020-05-11T14:26:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.capgemini.snapdeal.runner.Tc_RemoveProduct_Runner -->
+      </class> <!-- com.capgemini.snapdeal.runner.Tc_Payment_Runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

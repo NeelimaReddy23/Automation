@@ -55,11 +55,11 @@ public class Tc_RemoveProduct_Page {
 	public void getSignin() {
 		signin.click();
 	}
-	
+
 	public void getLogin() {
 		login.click();
 	}
-	
+
 	public void getUser(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.switchTo().frame(0);
@@ -85,7 +85,7 @@ public class Tc_RemoveProduct_Page {
 	public void getSubmit() {
 		submit.click();
 	}
-	
+
 	public void getWindow(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
@@ -105,39 +105,39 @@ public class Tc_RemoveProduct_Page {
 	public void onClick() {
 		onsearch.click();
 	}
-	
+
 	public void getFacemask() {
 		facemask.click();
 	}
-	
+
 	public void getAddToCart(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		Set<String> s = driver.getWindowHandles();
-		int count=0;
-		for(String a:s) {
+		int count = 0;
+		for (String a : s) {
 			count++;
-			if(count==2) {
+			if (count == 2) {
 				driver.switchTo().window(a);
 			}
 		}
 		addtocart.click();
 	}
-	
+
 	public void getCart() {
 		cart.click();
 	}
-	
+
 	public void getRemove(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		Set<String> s = driver.getWindowHandles();
-		int count=0;
-		for(String a:s) {
+		int count = 0;
+		for (String a : s) {
 			count++;
-			if(count==2) {
+			if (count == 2) {
 				driver.switchTo().window(a);
 			}
 		}
 		remove.click();
 	}
-	
+
 }
