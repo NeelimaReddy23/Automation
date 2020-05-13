@@ -19,8 +19,10 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='Chocolates, Mints & Candies']")
 	private WebElement choco;
 
-	@FindBy(xpath = "//img[@title='Xplor Combo (6 Packs of 50 gm Each) Dark Chocolate 300 gm']")
+	@FindBy(xpath = "//img[@title='BOGATCHI 70% Dark Cocoa Choco Chips Chocolate Dark Chocolate 80 g']")
+//	Xplor Combo (6 Packs of 50 gm Each) Dark Chocolate 300 gm']
 //	MANTOUSS MANTOUSS Christmas chocolate hamper Dark Chocolate 200 g
+//	BOGATCHI 70% Dark Cocoa Choco Chips Chocolate Dark Chocolate 80 g
 	private WebElement product;
 
 	public HomePage(WebDriver driver) {
