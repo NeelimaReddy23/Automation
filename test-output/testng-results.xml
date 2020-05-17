@@ -2,34 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="41171" started-at="2020-05-13T16:26:39Z" finished-at="2020-05-13T16:27:20Z">
+  <suite name="Default suite" duration-ms="36003" started-at="2020-05-17T11:01:16Z" finished-at="2020-05-17T11:01:52Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@7fc229ab]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Deliver_Runner$Tc_Payment_Runner@7fc2413d]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="41171" started-at="2020-05-13T16:26:39Z" finished-at="2020-05-13T16:27:20Z">
-      <class name="com.capgemini.snapdeal.runner.Tc_Payment_Runner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@7fc229ab]" name="setUpClass" is-config="true" duration-ms="387" started-at="2020-05-13T21:56:39Z" finished-at="2020-05-13T21:56:40Z">
+    <test name="Default test" duration-ms="36003" started-at="2020-05-17T11:01:16Z" finished-at="2020-05-17T11:01:52Z">
+      <class name="com.capgemini.snapdeal.runner.Tc_Deliver_Runner$Tc_Payment_Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Deliver_Runner$Tc_Payment_Runner@7fc2413d]" name="setUpClass" is-config="true" duration-ms="371" started-at="2020-05-17T16:31:16Z" finished-at="2020-05-17T16:31:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@7fc229ab]" name="feature" duration-ms="40639" started-at="2020-05-13T21:56:40Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-13T21:57:20Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Deliver_Runner$Tc_Payment_Runner@7fc2413d]" name="feature" duration-ms="35407" started-at="2020-05-17T16:31:17Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2020-05-17T16:31:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Snapdeal Payment Feature]]>
+                <![CDATA[Login into snapdeal website]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Payment_Runner@7fc229ab]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2020-05-13T21:57:20Z" finished-at="2020-05-13T21:57:20Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.capgemini.snapdeal.runner.Tc_Deliver_Runner$Tc_Payment_Runner@7fc2413d]" name="tearDownClass" is-config="true" duration-ms="79" started-at="2020-05-17T16:31:52Z" finished-at="2020-05-17T16:31:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- com.capgemini.snapdeal.runner.Tc_Payment_Runner -->
+      </class> <!-- com.capgemini.snapdeal.runner.Tc_Deliver_Runner$Tc_Payment_Runner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

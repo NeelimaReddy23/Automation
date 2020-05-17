@@ -35,5 +35,18 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="poijar/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="poijar/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="poijar/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="poijar/curvesapi-1.04.jar"/>
+	<classpathentry kind="lib" path="poijar/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="poijar/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="poijar/poi-3.17.jar"/>
+	<classpathentry kind="lib" path="poijar/poi-examples-3.17.jar"/>
+	<classpathentry kind="lib" path="poijar/poi-excelant-3.17.jar"/>
+	<classpathentry kind="lib" path="poijar/poi-ooxml-3.17.jar"/>
+	<classpathentry kind="lib" path="poijar/poi-ooxml-schemas-3.17.jar"/>
+	<classpathentry kind="lib" path="poijar/poi-scratchpad-3.17.jar"/>
+	<classpathentry kind="lib" path="poijar/xmlbeans-2.6.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

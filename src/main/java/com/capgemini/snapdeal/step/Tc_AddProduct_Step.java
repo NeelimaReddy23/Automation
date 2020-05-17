@@ -21,7 +21,7 @@
 //	@Given("^User enters web site link$")
 //	public void user_enters_web_site_link() throws InterruptedException {
 //		driver.manage().window().maximize();
-//		driver.get("http://www.snapdeal.com");
+//		driver.get("https://www.snapdeal.com");
 //		a.getSignin(driver);
 //		a.getLogin();
 //	}

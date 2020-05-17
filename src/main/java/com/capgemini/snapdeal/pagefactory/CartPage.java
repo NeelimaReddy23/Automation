@@ -41,10 +41,6 @@ public class CartPage {
 		proceedtopay.click();
 	}
 
-//	public void getPin() {
-//		pincode.click();
-//	}
-
 	public WebElement getPinCode() {
 		return pincode;
 	}
