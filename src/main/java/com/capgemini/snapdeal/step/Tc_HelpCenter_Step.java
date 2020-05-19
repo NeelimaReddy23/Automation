@@ -14,7 +14,7 @@
 //
 //	WebDriver driver = new ChromeDriver();
 //	LoginPage l = new LoginPage(driver);
-//	HelpCenterPage h=new HelpCenterPage(driver);
+//	HelpCenterPage h = new HelpCenterPage(driver);
 //
 //	@Given("^user enters the web site link$")
 //	public void user_enters_the_web_site_link() {
@@ -36,6 +36,12 @@
 //
 //	@Then("^get the title of the page$")
 //	public void get_the_title_of_the_page() {
+//		try {
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 //		String title = driver.getTitle();
 //		System.out.println(title);
 //		l.getWindow(driver);
@@ -44,8 +50,13 @@
 //	@Then("^user clicks on help center$")
 //	public void user_clicks_on_help_center() {
 //		h.getHelp();
+//		try {
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 //	}
-//	
 //
 //	@Then("^user searches for \"([^\"]*)\"$")
 //	public void user_searches_for(String arg1) {
@@ -56,7 +67,7 @@
 //
 //	@Then("^get the title$")
 //	public void get_the_title() {
-//		String title=driver.getTitle();
+//		String title = driver.getTitle();
 //		System.out.println(title);
 //	}
 //

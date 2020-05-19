@@ -10,8 +10,8 @@
 //import cucumber.api.java.en.When;
 //
 //public class Tc_Login_Step extends BaseClass {
+//	
 //	WebDriver driver = new ChromeDriver();
-//
 //	Tc_Login_Page p1 = new Tc_Login_Page(driver);
 //
 //	@Given("^user enters website details$")

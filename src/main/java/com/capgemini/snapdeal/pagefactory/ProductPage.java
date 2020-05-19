@@ -10,17 +10,20 @@ import org.openqa.selenium.support.PageFactory;
 
 public class ProductPage {
 
+	// declaration
 	@FindBy(xpath = "//div[@id='add-cart-button-id']")
 	private WebElement addtocart;
 
 	@FindBy(xpath = "//span[text()='Cart']")
 	private WebElement cart;
 
+	// initialization
 	public ProductPage(WebDriver driver1) {
 		PageFactory.initElements(driver1, this);
 		driver1.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
+	// action
 	public void getAddToCart(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		Set<String> s = driver.getWindowHandles();

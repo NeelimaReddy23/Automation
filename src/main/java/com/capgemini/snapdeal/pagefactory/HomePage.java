@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
+	// declaration
 	@FindBy(linkText = "See All Categories")
 	private WebElement categories;
 
@@ -19,17 +20,16 @@ public class HomePage {
 	@FindBy(xpath = "//a[text()='Chocolates, Mints & Candies']")
 	private WebElement choco;
 
-	@FindBy(xpath = "//img[@title='BOGATCHI 70% Dark Cocoa Choco Chips Chocolate Dark Chocolate 80 g']")
-//	Xplor Combo (6 Packs of 50 gm Each) Dark Chocolate 300 gm']
-//	MANTOUSS MANTOUSS Christmas chocolate hamper Dark Chocolate 200 g
-//	BOGATCHI 70% Dark Cocoa Choco Chips Chocolate Dark Chocolate 80 g
+	@FindBy(xpath = "//img[@title='Lindt Excellence Dark Cocoa 85% Dark Chocolate 0.2 g']")
 	private WebElement product;
 
+	// initialization
 	public HomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
+	// action
 	public void getCategories(WebDriver driver) throws InterruptedException {
 		PageFactory.initElements(driver, this);
 		Actions action = new Actions(driver);

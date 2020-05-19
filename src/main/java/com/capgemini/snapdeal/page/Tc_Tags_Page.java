@@ -2,12 +2,13 @@ package com.capgemini.snapdeal.page;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Tc_RemoveProduct_Page {
+public class Tc_Tags_Page {
 
 	//declaration
 	@FindBy(xpath = "//span[@class='accountUserName col-xs-12 reset-padding']")
@@ -28,14 +29,14 @@ public class Tc_RemoveProduct_Page {
 	@FindBy(id = "submitLoginUC")
 	private WebElement submit;
 
-	@FindBy(xpath = "//input[@class='col-xs-20 searchformInput keyword']")
+	@FindBy(id = "inputValEnter")
 	private WebElement search;
 
 	@FindBy(xpath = "//button[@class='searchformButton col-xs-4 rippleGrey']/span")
 	private WebElement onsearch;
 
-	@FindBy(xpath = "//img[@title=\"3 ply mask ANTI-INFECTANT FACE MASK (Pack Of 25)\"]")
-	private WebElement facemask;
+	@FindBy(xpath = "//img[@title='Bionova Hand Sanitizer 500 mL Pack of 1']")
+	private WebElement handsanitizer;
 
 	@FindBy(xpath = "//div[@id=\"add-cart-button-id\"]")
 	private WebElement addtocart;
@@ -47,12 +48,12 @@ public class Tc_RemoveProduct_Page {
 	private WebElement remove;
 
 	//initialization
-	public Tc_RemoveProduct_Page(WebDriver driver) {
+	public Tc_Tags_Page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
-	//actions
+	//action
 	public void getSignin() {
 		signin.click();
 	}
@@ -96,7 +97,7 @@ public class Tc_RemoveProduct_Page {
 	}
 
 	public void getsearch() {
-		search.click();
+				search.click();
 	}
 
 	public WebElement getSearch() {
@@ -107,8 +108,8 @@ public class Tc_RemoveProduct_Page {
 		onsearch.click();
 	}
 
-	public void getFacemask() {
-		facemask.click();
+	public void getSanitizer() {
+		handsanitizer.click();
 	}
 
 	public void getAddToCart(WebDriver driver) {

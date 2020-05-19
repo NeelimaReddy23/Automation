@@ -1,3 +1,4 @@
+#Parameterizing without Examples Keyword
 Feature: Snapdeal Login feature 
 
 Scenario: Checking login to snapdeal website 

@@ -61,7 +61,7 @@
 //
 //	@Then("^user clicks on product$")
 //	public void user_clicks_on_product() {
-//		a.getRyaal();
+//		a.getSanitizer();
 //
 //	}
 //
@@ -73,7 +73,7 @@
 //
 //	@Then("^close the browser$")
 //	public void close_the_browser() throws Throwable {
-//		driver.quit();
+////		driver.quit();
 //	}
 //
 //}

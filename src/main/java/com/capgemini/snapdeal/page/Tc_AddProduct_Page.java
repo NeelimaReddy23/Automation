@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Tc_AddProduct_Page {
 
+	//declaration
 	@FindBy(xpath = "//span[@class='accountUserName col-xs-12 reset-padding']")
 	private WebElement signin;
 
@@ -38,17 +39,19 @@ public class Tc_AddProduct_Page {
 	@FindBy(xpath = "//button[@class='searchformButton col-xs-4 rippleGrey']/span")
 	private WebElement onsearch;
 
-	@FindBy(xpath = "//img[@title='REJSOL Hand Sanitizer Alcohol Based 100ml * 5 Sanitizers 500 mL Pack of 5']")
-	private WebElement ryaalsanitizer;
+	@FindBy(xpath = "//img[@title='Bionova Hand Sanitizer 500 mL Pack of 1']")
+	private WebElement sanitizer;
 
 	@FindBy(xpath = "//div[@id=\"add-cart-button-id\"]")
 	private WebElement addtocart;
 
+	//initialization
 	public Tc_AddProduct_Page(WebDriver driver1) {
 		PageFactory.initElements(driver1, this);
 		driver1.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
+	//actions
 	public void getSignin(WebDriver driver) throws InterruptedException {
 		PageFactory.initElements(driver, this);
 		Actions action = new Actions(driver);
@@ -116,8 +119,8 @@ public class Tc_AddProduct_Page {
 		onsearch.click();
 	}
 
-	public void getRyaal() {
-		ryaalsanitizer.click();
+	public void getSanitizer() {
+		sanitizer.click();
 	}
 
 	public void getAddToCart(WebDriver driver1) {

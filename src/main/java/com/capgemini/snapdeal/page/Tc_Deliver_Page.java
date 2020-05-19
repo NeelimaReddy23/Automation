@@ -10,7 +10,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Tc_Deliver_Page {
-
+	
+	//declaration
 	@FindBy(xpath = "//span[@class='accountUserName col-xs-12 reset-padding']")
 	private WebElement signin;
 
@@ -32,15 +33,13 @@ public class Tc_Deliver_Page {
 	@FindBy(linkText = "See All Categories")
 	private WebElement categories;
 
-//	@FindBy(xpath = "(/html/body/div[2]/div[4]/div/div/div/div[2]/ul/li[7]/a/span[2]")
 	@FindBy(xpath = "//*[@id=\"SMWrapr\"]/div[2]/ul/li[7]/a/span[2]")
 	private WebElement kids;
 
 	@FindBy(xpath = "//a[text()='Stationery']")
 	private WebElement stationery;
 
-	@FindBy(xpath = "//img[@title='Mont Blanc Premium Roller Ball Pen']")
-//	PEN (Set of 2) 3 in 1 Ballpoint Function, Stylus pen & mobile stand( ink BLUE)
+	@FindBy(xpath = "//img[@title='Success Hero Fountain  Pen Iridium Nib Ink Pen Model 332 Gold Cap (Pack of 3)']")
 	private WebElement product;
 	
 	@FindBy(xpath = "//span[text()='buy now']")
@@ -64,11 +63,13 @@ public class Tc_Deliver_Page {
 	@FindBy(id = "make-payment")
 	private WebElement pay;
 
+	//Intialization
 	public Tc_Deliver_Page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
+	//actions
 	public void getSignin() {
 		signin.click();
 	}

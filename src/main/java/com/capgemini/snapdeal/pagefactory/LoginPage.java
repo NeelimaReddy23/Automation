@@ -8,7 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-
+	
+	// declaration
 	@FindBy(xpath = "//span[@class='accountUserName col-xs-12 reset-padding']")
 	private WebElement signin;
 
@@ -27,11 +28,13 @@ public class LoginPage {
 	@FindBy(id = "submitLoginUC")
 	private WebElement submit;
 
+	// initialization
 	public LoginPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
+	// action
 	public void getSignin() {
 		signin.click();
 	}

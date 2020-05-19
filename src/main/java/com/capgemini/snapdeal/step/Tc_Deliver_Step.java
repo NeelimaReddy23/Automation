@@ -3,6 +3,7 @@
 //import org.testng.Assert;
 //import com.capgemini.snapdeal.generic.DeliverBase;
 //import com.capgemini.snapdeal.page.Tc_Deliver_Page;
+//import cucumber.api.java.en.And;
 //import cucumber.api.java.en.Given;
 //import cucumber.api.java.en.Then;
 //import cucumber.api.java.en.When;
@@ -18,23 +19,19 @@
 //
 //	@When("^user click on signin$")
 //	public void user_click_on_signin() {
-//		
 //		dp = new Tc_Deliver_Page(driver);
 //		dp.getSignin();
 //		dp.getLogin();
-//
 //	}
 //
 //	@Then("^user enters valid credentials$")
 //	public void user_enters_valid_credentials() {
-//
 //		dp.getUser(driver);
 //		dp.getUserName().sendKeys(prop.getProperty("username"));
 //		dp.clickContinue();
 //		dp.getPass();
 //		dp.getPwd().sendKeys(prop.getProperty("password"));
 //		dp.getSubmit();
-//
 //	}
 //
 //	@Then("^get the title of the page$")
@@ -54,7 +51,7 @@
 //		dp.getKids();
 //	}
 //
-//	@Then("^selects Stationery$")
+//	@And("^selects Stationery$")
 //	public void selects_Stationery() {
 //		dp.getStationery();
 //	}
@@ -79,12 +76,12 @@
 //		dp.getMobile();
 //	}
 //
-//	@Then("^user clicks on save and continue$")
+//	@And("^user clicks on save and continue$")
 //	public void user_clicks_on_save_and_continue() {
 //		dp.getSaveAndContinue();
 //	}
 //
-//	@Then("^user clicks on proceed to payment$")
+//	@And("^user clicks on proceed to payment$")
 //	public void user_clicks_on_proceed_to_payment() {
 //		dp.getProceedToPayment();
 //	}

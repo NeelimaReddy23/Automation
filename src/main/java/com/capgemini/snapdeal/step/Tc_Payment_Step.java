@@ -54,17 +54,17 @@
 //		h.getCategories(driver);
 //	}
 //
-//	@Then("^user clicks on daily needs$")
+//	@And("^user clicks on daily needs$")
 //	public void user_clicks_on_daily_needs() {
 //		h.getDailyNeeds();
 //	}
 //
-//	@And("^selects chocolates, mints & candies$")
+//	@Then("^selects chocolates, mints & candies$")
 //	public void selects_chocolates_mints_candies() {
 //		h.getChoco();
 //	}
 //
-//	@Then("^clicks on an item$")
+//	@And("^clicks on an item$")
 //	public void clicks_on_an_item() {
 //		h.getProduct();
 //	}
@@ -79,7 +79,7 @@
 //		p.getCart();
 //	}
 //
-//	@Then("^user clicks on proceed to pay$")
+//	@And("^user clicks on proceed to pay$")
 //	public void user_clicks_on_proceed_to_pay() {
 //		c.getProceedToPay();
 //	}
@@ -101,8 +101,8 @@
 //		c.getSaveAndContinue();
 //	}
 //
-//	@Then("^user cliks on proceed to payment$")
-//	public void user_cliks_on_proceed_to_payment() throws InterruptedException {
+//	@And("^user clicks on proceed to payment$")
+//	public void user_clicks_on_proceed_to_payment() throws InterruptedException {
 //		Thread.sleep(1000);
 //		c.getProceedToPayment();
 //	}

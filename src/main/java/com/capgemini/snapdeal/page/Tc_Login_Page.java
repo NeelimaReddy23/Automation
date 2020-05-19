@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Tc_Login_Page {
+	
+	//declaration
 	@FindBy(xpath = "//span[text()=\"Sign In\"]")
 	public WebElement signinbtn;
 
@@ -32,11 +34,13 @@ public class Tc_Login_Page {
 	@FindBy(xpath = "//a[@href=\"https://www.snapdeal.com/logout\"]")
 	public WebElement logoutbtn;
 
+	//initialization
 	public Tc_Login_Page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
+	//actions
 	public void signinbutton() {
 		signinbtn.click();
 	}

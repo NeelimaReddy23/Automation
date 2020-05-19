@@ -2,40 +2,41 @@ package com.capgemini.snapdeal.page;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Tc_RemoveProduct_Page {
+public class Tc_Multiple_Page {
 
-	//declaration
-	@FindBy(xpath = "//span[@class='accountUserName col-xs-12 reset-padding']")
-	private WebElement signin;
+	@FindBy(xpath = "//span[text()=\"Sign In\"]")
+	public WebElement Signinbtn;
 
-	@FindBy(xpath = "//span[@class='accountBtn btn rippleWhite']/a")
-	private WebElement login;
+	@FindBy(xpath = "//a[@href=\"https://www.snapdeal.com/login\"]")
+	public WebElement Loginbtn;
 
-	@FindBy(xpath = "//input[@id='userName']")
-	private WebElement username;
+	@FindBy(id = "userName")
+	public WebElement usertb;
 
 	@FindBy(id = "checkUser")
-	private WebElement continu;
+	public WebElement continuebtn;
 
 	@FindBy(id = "j_password_login_uc")
-	private WebElement pwd;
+	public WebElement passwordtb;
 
 	@FindBy(id = "submitLoginUC")
-	private WebElement submit;
+	public WebElement submitbtn;
 
-	@FindBy(xpath = "//input[@class='col-xs-20 searchformInput keyword']")
+	@FindBy(id = "inputValEnter")
 	private WebElement search;
 
 	@FindBy(xpath = "//button[@class='searchformButton col-xs-4 rippleGrey']/span")
 	private WebElement onsearch;
 
-	@FindBy(xpath = "//img[@title=\"3 ply mask ANTI-INFECTANT FACE MASK (Pack Of 25)\"]")
-	private WebElement facemask;
+	@FindBy(xpath = "//img[@title='Sirgan cotton White Hand Gloves(Pack of 10)']")
+	private WebElement gloves;
 
 	@FindBy(xpath = "//div[@id=\"add-cart-button-id\"]")
 	private WebElement addtocart;
@@ -46,52 +47,55 @@ public class Tc_RemoveProduct_Page {
 	@FindBy(xpath = "//div[@class=\"remove-item-div\"]")
 	private WebElement remove;
 
-	//initialization
-	public Tc_RemoveProduct_Page(WebDriver driver) {
+	// initialization
+	public Tc_Multiple_Page(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
-	//actions
-	public void getSignin() {
-		signin.click();
+	// Actions
+	public void getSignin(WebDriver driver) throws InterruptedException {
+		PageFactory.initElements(driver, this);
+		Actions action = new Actions(driver);
+		Thread.sleep(1000);
+		action.moveToElement(Signinbtn).perform();
 	}
 
 	public void getLogin() {
-		login.click();
+		Loginbtn.click();
 	}
 
 	public void getUser(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		driver.switchTo().frame(0);
-		username.click();
+		usertb.click();
 	}
 
 	public WebElement getUserName() {
-		return username;
+		return usertb;
 	}
 
 	public void clickContinue() {
-		continu.click();
+		continuebtn.click();
 	}
 
-	public void getPass() {
-		pwd.click();
+	public void getPassword() {
+		passwordtb.click();
 	}
 
-	public WebElement getPwd() {
-		return pwd;
+	public WebElement getPass() {
+		return passwordtb;
 	}
 
 	public void getSubmit() {
-		submit.click();
+		submitbtn.click();
 	}
 
-	public void getWindow(WebDriver driver) {
+	public void getWindow(WebDriver driver1) {
 
-		PageFactory.initElements(driver, this);
-		String s1 = driver.getWindowHandle();
-		driver.switchTo().window(s1);
+		PageFactory.initElements(driver1, this);
+		String s1 = driver1.getWindowHandle();
+		driver1.switchTo().window(s1);
 
 	}
 
@@ -107,18 +111,19 @@ public class Tc_RemoveProduct_Page {
 		onsearch.click();
 	}
 
-	public void getFacemask() {
-		facemask.click();
+	public void getGloves() {
+		gloves.click();
 	}
 
-	public void getAddToCart(WebDriver driver) {
-		PageFactory.initElements(driver, this);
-		Set<String> s = driver.getWindowHandles();
+	public void getAddToCart(WebDriver driver1) {
+		PageFactory.initElements(driver1, this);
+
+		Set<String> s = driver1.getWindowHandles();
 		int count = 0;
-		for (String a : s) {
+		for (String str : s) {
 			count++;
 			if (count == 2) {
-				driver.switchTo().window(a);
+				driver1.switchTo().window(str);
 			}
 		}
 		addtocart.click();

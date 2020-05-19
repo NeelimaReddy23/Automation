@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class HelpCenterPage {
 
-	@FindBy(xpath = "//a[@href='/help']")
+	@FindBy(xpath = "//*[@id=\"sdHeader\"]/div[4]/section/div/span[2]/span[2]/a']")
 	private WebElement help;
 
 	@FindBy(id = "faq_search_text")
@@ -24,6 +24,9 @@ public class HelpCenterPage {
 	}
 
 	public void getHelp() {
+//		PageFactory.initElements((WebDriver) driver, this);
+//	wait.until(ExpectedCondition.visibilityOfElement)		
+		
 		help.click();
 	}
 

@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class CartPage {
 
+	// declaration
 	@FindBy(xpath = "//form[@id='checkout-continue']")
 	private WebElement proceedtopay;
 
@@ -20,9 +21,6 @@ public class CartPage {
 	@FindBy(id = "address")
 	private WebElement address;
 
-//	@FindBy(id = "home-mobile")
-//	private WebElement mobile;
-
 	@FindBy(xpath = "//span[@class='circle']")
 	private WebElement mobile;
 
@@ -32,11 +30,13 @@ public class CartPage {
 	@FindBy(id = "make-payment")
 	private WebElement pay;
 
+	// initialization
 	public CartPage(WebDriver driver1) {
 		PageFactory.initElements(driver1, this);
 		driver1.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
 	}
 
+	// action
 	public void getProceedToPay() {
 		proceedtopay.click();
 	}

@@ -1,3 +1,4 @@
+#Data Tables in Cucumber
 Feature: Checking for adding an item to cart 
 
 Scenario: Checking for adding a product to cart 
