@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.capgemini.snapdeal.runner.Tc_HelpCenter_Runner">
+      <class name="com.capgemini.snapdeal.runner.Tc_Payment_Runner">
         <methods>
           <include name="setUpClass"/>
           <include name="feature" invocation-numbers="0"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.capgemini.snapdeal.runner.Tc_HelpCenter_Runner -->
+      </class> <!-- com.capgemini.snapdeal.runner.Tc_Payment_Runner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -102,7 +102,7 @@
 //	}
 //
 //	@And("^user clicks on proceed to payment$")
-//	public void user_clicks_on_proceed_to_payment() throws InterruptedException {
+//	public void user_clicks_on_prgetoceed_to_payment() throws InterruptedException {
 //		Thread.sleep(1000);
 //		c.getProceedToPayment();
 //	}
@@ -111,6 +111,16 @@
 //	public void checkout_page_should_be_open() {
 //		String title = driver.getTitle();
 //		System.out.println(title);
+//	}
+//
+//	@Then("^user clicks on cash on delivery$")
+//	public void user_clicks_on_cash_on_delivery() throws InterruptedException {
+//		c.getCod(driver);
+//	}
+//
+//	@And("^clicks on place cod order$")
+//	public void clicks_on_place_cod_order() {
+//		c.getPlace();
 //	}
 //
 //	@Then("^close the browser$")

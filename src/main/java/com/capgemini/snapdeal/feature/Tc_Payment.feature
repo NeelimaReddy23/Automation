@@ -16,4 +16,6 @@ Scenario: Checking for payment feature in snapdeal
 	Then user clicks on save and continue 
 	And user clicks on proceed to payment 
 	Then checkout page should be open 
+	Then user clicks on cash on delivery
+	And clicks on place cod order
 	Then close the browser
