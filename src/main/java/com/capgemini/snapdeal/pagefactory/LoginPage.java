@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-	
+
 	// declaration
 	@FindBy(xpath = "//span[@class='accountUserName col-xs-12 reset-padding']")
 	private WebElement signin;

@@ -2,7 +2,9 @@
 //
 //import org.testng.Assert;
 //import com.capgemini.snapdeal.generic.DeliverBase;
-//import com.capgemini.snapdeal.page.Tc_Deliver_Page;
+//import com.capgemini.snapdeal.pagefactory.HomePageD;
+//import com.capgemini.snapdeal.pagefactory.LoginPage;
+//import com.capgemini.snapdeal.pagefactory.PaymentPage;
 //import cucumber.api.java.en.And;
 //import cucumber.api.java.en.Given;
 //import cucumber.api.java.en.Then;
@@ -10,7 +12,9 @@
 //
 //public class Tc_Deliver_Step extends DeliverBase {
 //
-//	Tc_Deliver_Page dp;
+//	LoginPage l;
+//	HomePageD h;
+//	PaymentPage p;
 //
 //	@Given("^user enters website details$")
 //	public void user_enters_website_details() {
@@ -19,71 +23,73 @@
 //
 //	@When("^user click on signin$")
 //	public void user_click_on_signin() {
-//		dp = new Tc_Deliver_Page(driver);
-//		dp.getSignin();
-//		dp.getLogin();
+//		l = new LoginPage(driver);
+//		l.getSignin();
+//		l.getLogin();
 //	}
 //
 //	@Then("^user enters valid credentials$")
 //	public void user_enters_valid_credentials() {
-//		dp.getUser(driver);
-//		dp.getUserName().sendKeys(prop.getProperty("username"));
-//		dp.clickContinue();
-//		dp.getPass();
-//		dp.getPwd().sendKeys(prop.getProperty("password"));
-//		dp.getSubmit();
+//		l.getUser(driver);
+//		l.getUserName().sendKeys(prop.getProperty("username"));
+//		l.clickContinue();
+//		l.getPass();
+//		l.getPwd().sendKeys(prop.getProperty("password"));
+//		l.getSubmit();
 //	}
 //
 //	@Then("^get the title of the page$")
 //	public void get_the_title_of_the_page() {
 //		String title = driver.getTitle();
 //		System.out.println(title);
-//		dp.getWindow(driver);
+//		l.getWindow(driver);
 //	}
 //
 //	@Then("^user clicks on see all categories$")
 //	public void user_clicks_on_see_all_categories() throws Throwable {
-//		dp.getCategories(driver);
+//		h = new HomePageD(driver);
+//		h.getCategories(driver);
 //	}
 //
 //	@Then("^user clicks on KID'S TOYS & FASHION$")
 //	public void user_clicks_on_KID_S_TOYS_FASHION() {
-//		dp.getKids();
+//		h.getKids();
 //	}
 //
 //	@And("^selects Stationery$")
 //	public void selects_Stationery() {
-//		dp.getStationery();
+//		h.getStationery();
 //	}
 //
 //	@Then("^clicks on an item$")
 //	public void clicks_on_an_item() {
-//		dp.getProduct();
+//		h.getProduct();
 //	}
 //
 //	@Then("^user clicks on buy now$")
 //	public void user_clicks_on_buy_now() {
-//		dp.getBuy(driver);
+//		h.getBuy(driver);
 //	}
 //
 //	@Then("^user enters delivery address$")
 //	public void user_enters_delivery_address() {
-//		dp.getPinCode().sendKeys(prop.getProperty("Pincode"));
-//		dp.getName();
-//		dp.getFullName().sendKeys(prop.getProperty("Name"));
-//		dp.getAddress();
-//		dp.getAddress1().sendKeys(prop.getProperty("Address"));
-//		dp.getMobile();
+//		p = new PaymentPage(driver);
+//		p.getPinCode().sendKeys(prop.getProperty("Pincode"));
+//		p.getName();
+//		p.getFullName().sendKeys(prop.getProperty("Name"));
+//		p.getAddress();
+//		p.getAddress1().sendKeys(prop.getProperty("Address"));
+//		p.getMobile();
 //	}
 //
 //	@And("^user clicks on save and continue$")
 //	public void user_clicks_on_save_and_continue() {
-//		dp.getSaveAndContinue();
+//		p.getSaveAndContinue();
 //	}
 //
 //	@And("^user clicks on proceed to payment$")
 //	public void user_clicks_on_proceed_to_payment() {
-//		dp.getProceedToPayment();
+//		p.getProceedToPayment();
 //	}
 //
 //	@Then("^checkout page should be open$")
